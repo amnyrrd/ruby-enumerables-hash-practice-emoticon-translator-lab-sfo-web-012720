@@ -15,8 +15,13 @@ def load_library(lib)
 end
 
 def get_japanese_emoticon(yaml_path, emoticon)
-  lib = load_library('./lib/emoticons.yml')
-  pp lib
+  emo_lib = load_library('./lib/emoticons.yml')
+  emo = emo_lib[:get_emoticon][emoticon]
+  if emo
+    return emo
+  else
+    return "Sorry!"
+  end
 end
 
 def get_english_meaning
