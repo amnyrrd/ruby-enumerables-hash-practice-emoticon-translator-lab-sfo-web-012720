@@ -4,8 +4,9 @@ require 'pp'
 
 def load_library(lib)
   emoticon_hash = YAML.load_file('./lib/emoticons.yml')
+  emoticons = emoticon_hash.values
   new_hash = { "get_meaning": {}, "get_emoticon": {} } 
-  new_hash
+  emoticons
 end
 
 def get_japanese_emoticon
