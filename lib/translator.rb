@@ -24,7 +24,7 @@ def get_japanese_emoticon(yaml_path, emoticon)
   end
 end
 
-def get_english_meaning
+def get_english_meaning(yaml_path, emoticon)
   # code goes here
 end
 
