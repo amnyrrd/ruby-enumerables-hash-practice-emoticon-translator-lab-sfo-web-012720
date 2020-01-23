@@ -21,8 +21,8 @@ def get_japanese_emoticon(yaml_path, emoticon)
       puts v
     else
       puts "Sorry!"
+    end
   end
-end
 end
 
 def get_english_meaning
