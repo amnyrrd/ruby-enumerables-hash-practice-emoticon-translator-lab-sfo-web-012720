@@ -15,7 +15,7 @@ def load_library(lib)
 end
 
 def get_japanese_emoticon(yaml_path, emoticon)
-  lib = load_file(yaml_path)
+  lib = load_library(yaml_path)
   lib[:get_emoticon].each do | k, v |
     if key == emoticon
       puts v
