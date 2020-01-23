@@ -14,8 +14,15 @@ def load_library(lib)
   new_hash
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(yaml_path, emoticon)
+  lib = load_file(yaml_path)
+  lib[:get_emoticon].each do | k, v |
+    if key == emoticon
+      puts v
+    else
+      puts "Sorry!"
+  end
+end
 end
 
 def get_english_meaning
