@@ -18,9 +18,9 @@ def get_japanese_emoticon(yaml_path, emoticon)
   lib = load_library('./lib/emoticons.yml')
   emo = emoticons[:get_emoticon][emoticon]
   if emo
-    puts emo
+    return emo
   else
-    puts "Sorry!"
+    return "Sorry!"
   end
 end
 
