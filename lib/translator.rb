@@ -8,7 +8,10 @@ def load_library(lib)
   lib.each do | meaning, emoticon |
     english_emoticon = emoticon[0]
     japanese_emoticon = emoticon[1]
-    new_hash[:get_meaning][japanese_emoticon]
+    new_hash[:get_meaning][japanese_emoticon] = meaning
+    new_hash[:get_emoticon][english_emoticon] = japanese_emoticon
+  end
+  new_hash
 end
 
 def get_japanese_emoticon
