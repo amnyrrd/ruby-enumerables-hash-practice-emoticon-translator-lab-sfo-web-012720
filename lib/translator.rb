@@ -20,7 +20,7 @@ def get_japanese_emoticon(yaml_path, emoticon)
   if emo
     return emo
   else
-    return "Sorry!"
+    return "Sorry, that emoticon was not found"
   end
 end
 
