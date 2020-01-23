@@ -25,7 +25,13 @@ def get_japanese_emoticon(yaml_path, emoticon)
 end
 
 def get_english_meaning(yaml_path, emoticon)
-  # code goes here
+  emo_lib = load_library('./lib/emoticons.yml')
+  eng = emo_lib[:get_meaning][emoticon]
+  if eng
+    return eng
+  else
+    return "Sorry!"
+  end
 end
 
 # {"angel"=>["O:)", "☜(⌒▽⌒)☞"],
